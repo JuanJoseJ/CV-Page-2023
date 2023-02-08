@@ -1,0 +1,51 @@
+{
+    "Name":"Juan José",
+    "Last Name":"Jaramillo Botero",
+    "Age":"24",
+    "E-mail":"s301352@studenti.polito.it",
+    "Phone":"(+39)3517978377",
+    "Studies":[
+            {
+                "Institution":"Universidad EIA",
+                "Start Date":"01/02/2017",
+                "End Date":"",
+                "Course":"Computer Engineering Undergraduate"
+            },
+            {
+                "Institution":"Politecnico di Torino",
+                "Start Date":"27/09/2017",
+                "End Date":"",
+                "Course":"Computer Engineering Undergraduate"
+            }
+    ],
+    "Profile":[
+        "Engineering student at Politecnico di Torino with great interest in software development.",
+        "Passionate for history and culture",
+        "From Medellín, Colombia.",
+        "Currently living in Torino, Italy."
+    ],
+    "Skills":{
+        "Languages":[
+            {
+                "Language":"English",
+                "Level":"C1",
+                "Certification":"IELTS"
+            },
+            {
+                "Language":"Italian",
+                "Level":"B2",
+                "Certification":"CILS"
+            },
+            {
+                "Language":"Spanish",
+                "Level":"Mother Tongue",
+                "Certification":""
+            }
+        ],
+        "Programming Languages":["Python","JavaScripts"],
+        "Software":["React","Node.js", "Express", "Docker", "Kubernetes"],
+        "Databases":["SQL","non-SQL","MongoDB"],
+        "Graphics":["HTML5","Tailwind","Bootstrap"],
+        "Other":["Office Suite"]
+    }
+}
