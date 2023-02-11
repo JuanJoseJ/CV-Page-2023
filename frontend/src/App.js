@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import api from './api'
 import React, { useState, useEffect, useContext, } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { Container, Toast, ToastBody } from 'react-bootstrap/';
 import 'react-toastify/dist/ReactToastify.css';
+import { LayoutCV } from './components/layouts';
 
 const MessageContext = React.createContext('')
 
 function App() {
-
-  const [message, setMessage] = useState('');
 
   const handleErrors = (err) => {
     toast(err)
@@ -18,10 +18,8 @@ function App() {
 
   return (
     <MessageContext.Provider value = {{handleErrors}}>
-      <div className="App">
-        <Main></Main>
-        <ToastContainer autoClose={5000}/>
-      </div>
+      <Main></Main>
+      <ToastContainer autoClose={5000}/>
     </MessageContext.Provider>
   );
 }
@@ -46,9 +44,7 @@ function Main() {
   }, [])
 
   return(
-    <div>
-      {console.log(userData)}
-    </div>
+    <LayoutCV></LayoutCV>
   )
 
 }
