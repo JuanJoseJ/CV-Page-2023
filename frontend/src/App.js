@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import api from './api'
 import React, { useState, useEffect, useContext, } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import { Container, Toast, ToastBody } from 'react-bootstrap/';
 import 'react-toastify/dist/ReactToastify.css';
 import { LayoutCV } from './components/layouts';
 
@@ -17,7 +15,7 @@ function App() {
   }
 
   return (
-    <MessageContext.Provider value = {{handleErrors}}>
+    <MessageContext.Provider value = {{handleErrors}} >
       <Main></Main>
       <ToastContainer autoClose={5000}/>
     </MessageContext.Provider>
