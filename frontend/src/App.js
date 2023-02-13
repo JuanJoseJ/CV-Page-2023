@@ -42,7 +42,7 @@ function Main() {
   }, [])
 
   return(
-    <LayoutCV></LayoutCV>
+    <LayoutCV userData={userData}></LayoutCV>
   )
 
 }
